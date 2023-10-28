@@ -1,11 +1,24 @@
-# vef2
+# vef2: Día de los Muertos Vefsíða
 
-ég er að fara gera síðu umm Día de los Muertos eða day of the dead sem er með myndir af Día de los Muertos og sogur um Día de los Muertos...
-í site diogramið er entry button sem er takki sem user iddi á og þá kemur fancy transition sem gítið táknar. örvana með gat í striki er að benda á mynd af útlit sýðini of venjulega örvana eru að benda á það sem takkin sem orfin kemur fra er með
+Verkefnið gengur út á að búa til vefsíðu um „Día de los Muertos“ (Day of the Dead). Á síðunni verða myndir og sögur tengdar þessari mexíkósku hátíð.
 
-home takki refreshar
-og images takin fer á image siða með fult af myndum in Día de los Muertos
-of about takin fer bara á síða með texti um Día de los Muertos
-of stories takkin líttur út eins og about pageið og er með sögur um Día de los Muertos
+## Diagram útskýring
 
-image pageið með örf sem bendir á annað page sem er bara page með myndina sem user ítdi á nema bara stærri
+Diagramið sýnir hvernig notendur navigera síðuna:
+
+- **Entry Button**: Þar byrjar ferlið. Notandinn ýtir á takkann og sér einhverja flotta færslu (transition).
+- **Örvar**: 
+   - **Örvar með táknum (gírum)**: Þær táknar færslur (transitions) milli síðna eða þegar eitthvað nýtt birtist.
+   - **Örvar með brotinni línu**: Sýna útlit síðunnar.
+   - **Venjulegar örvar**: Sýna tengingu milli takka og síðna.
+
+## Síður og takkar
+
+- **Home takki**: Færir þig til baka á upphafssíðuna.
+- **Images takki**: Opnar síðu með mörgum myndum.
+- **About takki**: Sýnir síðu sem lýsir hátíðinni.
+- **Stories takki**: Birtir sögur tengdar hátíðinni.
+
+## Myndasíða
+
+- Hér er hægt að skoða myndirnar í stærri útgáfu.
