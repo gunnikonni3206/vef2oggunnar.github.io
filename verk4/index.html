@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="enterBtn" class="enter-btn" onclick="showSiteLayout()">Enter</button>
+    <div class="container" id="siteLayout" style="display: none;">
+        <div class="header">
+            <!-- Image as Dropdown Button -->
+            <div class="dropdown">
+                <img src="skull.png" alt="Menu" class="dropbtn" onclick="toggleDropdown()">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="index.html">HOME</a>
+                    <a href="https://en.wikipedia.org/wiki/Day_of_the_Dead" target="_blank">wikipedia</a>
+                    <a href="stories.html">stories</a>
+                    <a href="images.html">images</a>
+                    <a href="login.html">login / register</a>
+                    <a href="about.html">about</a>
+                </div>
+            </div>
+            <!-- Regular Links -->
+            <a href="index.html" class="btn">HOME</a>
+            <a href="https://en.wikipedia.org/wiki/Day_of_the_Dead" target="_blank">wikipedia</a>
+            <a href="stories.html" class="btn">stories</a>
+        </div>
+        <div class="main-content">
+            <img src="skull.png" alt="img" class="main-image">
+        </div>
+        <div class="footer">
+            <a href="images.html" class="btn">images</a>
+            <a href="login.html" class="login-link">login / register</a>
+            <a href="about.html" class="btn">about</a>
+        </div>
+    </div>
+    <script>
+        function showSiteLayout() {
+            document.getElementById('enterBtn').style.display = 'none';
+            document.getElementById('siteLayout').style.display = 'block';
+        }
+
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
