@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Day of the Dead</h1>
+    <style>
+            .header-nav {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1
+    {
+        color: white;
+        background-color: #333;
+        box-shadow: #333;
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header-nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        background-color: black;
+        padding: 0.5em 3em;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 20px;
+        margin: 0 10px;
+    }
+
+    .header-nav a:hover {
+        transform: scale(1.1);
+    }
+
+
+
+        .btn {
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0.5em;
+            background-color: #000000;
+            color: white;
+            border-radius: 20px;
+            font-size: 1em;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        img.thumbnail {
+            width: 200px;
+            height: 300px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <nav class="header-nav">
+            <a href="index.html" class="btn">Home</a>
+            <a href="stories.html" class="btn">Stories</a>
+            <a href="about.html" class="btn">About</a>
+            <a href="login.html" class="btn">login</a>
+        </nav>
+    </header>
+
+    <img src="https://picsum.photos/200/300?random=1" alt="img1" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=2" alt="img2" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=3" alt="img3" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=4" alt="img4" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=5" alt="img5" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=6" alt="img6" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=7" alt="img7" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=8" alt="img8" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=9" alt="img9" class="thumbnail">
+    <img src="https://picsum.photos/200/300?random=10" alt="img10" class="thumbnail">
+
+    
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+
+        var images = document.querySelectorAll('.thumbnail');
+        images.forEach(function(image) {
+            image.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        });
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
