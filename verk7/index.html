@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Layout</title>
+    <link rel="stylesheet" href="Mstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="enterBtn" class="enter-btn" onclick="showSiteLayout()">
+        <span class="icon-enter"></span> Enter
+    </button>
+    <div class="container" id="siteLayout" style="display: none;">
+        <div class="header">
+            <img src="dude head.svg" alt="Logo" class="logo-svg">
+            <div class="dropdown">
+                <img src="skull butn.png" alt="Menu" class="dropbtn" onclick="toggleDropdown()">
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="index.html"><span class="icon-home"></span> HOME</a>
+                    <a href="https://en.wikipedia.org/wiki/Day_of_the_Dead" target="_blank"><span class="icon-menu"></span> wikipedia</a>
+                    <a href="stories.html"><span class="icon-books"></span> stories</a>
+                    <a href="images.html"><span class="icon-images"></span> images</a>
+                    <a href="login.html"><span class="icon-user"></span> login / register</a>
+                    <a href="about.html"><span class="icon-book"></span> about</a>
+                </div>
+            </div>
+            <a href="https://en.wikipedia.org/wiki/Day_of_the_Dead" target="_blank"><span class="icon-menu"></span> wikipedia</a>
+            <a href="stories.html" class="btn"><span class="icon-books"></span> stories</a>
+        </div>
+        <div class="main-content">
+            <img src="skull.png" alt="img" class="main-image">
+        </div>
+        <div class="footer">
+            <a href="images.html" class="btn"><span class="icon-images"></span> images</a>
+            <a href="login.html" class="login-link"><span class="icon-user"></span> login / register</a>
+            <a href="about.html" class="btn"><span class="icon-book"></span> about</a>
+        </div>
+    </div>
+    <script>
+        function showSiteLayout() {
+            document.getElementById('enterBtn').style.display = 'none';
+            document.getElementById('siteLayout').style.display = 'block';
+        }
+
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const enterBtn = document.getElementById('enterBtn');
+    const siteLayout = document.getElementById('siteLayout');
+
+    enterBtn.addEventListener('click', function() {
+        enterBtn.style.display = 'none';
+        siteLayout.style.display = 'block';
+        siteLayout.animate([
+            { opacity: 0, transform: 'scale(0.5)' },
+            { opacity: 1, transform: 'scale(1)' },
+            { opacity: 1, transform: 'rotate(1)' }
+        ], {
+            duration: 1000,
+            fill: 'forwards'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
