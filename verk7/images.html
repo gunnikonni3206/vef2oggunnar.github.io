@@ -47,10 +47,12 @@
         }
 
         .image-slideshow img {
-            width: 100%;
-            display: block;
-            transition: transform 1s ease-in-out;
-        }
+    width: 605px;  /* Specify the width in pixels */
+    height: 400px; /* Specify the height in pixels */
+    object-fit: cover; /* This will ensure the images cover the area without distorting aspect ratios */
+    display: block;
+    transition: transform 1s ease-in-out;
+}
 
         .controls {
             position: absolute;
@@ -85,6 +87,11 @@
         .controls button:hover {
             background: rgba(0, 0, 0, 0.7);
         }
+        .thumbnail {
+    width: 100%;
+    height: auto;
+}
+
     </style>
 </head>
 <h2>Day of the Dead Overview</h2>
@@ -99,9 +106,11 @@
     </header>
 
     <div class="image-slideshow">
-        <img src="https://picsum.photos/800/400?random=1" alt="Image 1">
-        <img src="https://picsum.photos/800/400?random=2" alt="Image 2" style="display:none;">
-        <img src="https://picsum.photos/800/400?random=3" alt="Image 3" style="display:none;">
+        <img src="images/coolimg/skull art.jpg" alt="Image 1" class="fixed-size-image">
+        <img src="images/coolimg/paper skull.jpg" alt="Image 2" class="fixed-size-image" style="display:none;">
+        <img src="images/coolimg/sexy skull.avif" alt="Image 3" class="fixed-size-image" style="display:none;">
+        
+        
         <div class="controls">
             <button onclick="prevSlide()">&#10094;</button>
             <button onclick="nextSlide()">&#10095;</button>
@@ -134,16 +143,27 @@
         showSlide(0);
     </script>
 </body>
-    <img src="https://picsum.photos/200/300?random=1" alt="img1" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=2" alt="img2" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=3" alt="img3" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=4" alt="img4" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=5" alt="img5" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=6" alt="img6" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=7" alt="img7" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=8" alt="img8" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=9" alt="img9" class="thumbnail">
-    <img src="https://picsum.photos/200/300?random=10" alt="img10" class="thumbnail">
+<img src="images/coolimg/skull woman.jpg" alt="img1" class="thumbnail">
+<img src="images/coolimg/skull art.jpg" alt="img2" class="thumbnail">
+<img src="images/coolimg/proud skulls.jpg" alt="img3" class="thumbnail">
+<img src="images/coolimg/skull creep.webp" alt="img4" class="thumbnail">
+<img src="images/coolimg/skull dude.jpg" alt="img5" class="thumbnail">
+<img src="images/coolimg/skull trop.jpg" alt="img6" class="thumbnail">
+<img src="images/coolimg/skull gang.jpg" alt="img7" class="thumbnail">
+<img src="images/coolimg/group.jpg" alt="img8" class="thumbnail">
+<img src="images/coolimg/skulls.jpg" alt="img9" class="thumbnail">
+<img src="images/coolimg/nice skull.jpg" alt="img10" class="thumbnail">
+<img src="images/coolimg/skull couple.jpg" alt="img11" class="thumbnail">
+<img src="images/coolimg/skull family.webp" alt="img12" class="thumbnail">
+<img src="images/coolimg/skull hat.jpg" alt="img13" class="thumbnail">
+<img src="images/coolimg/skull hero.webp" alt="img14" class="thumbnail">
+<img src="images/coolimg/skull brothers.jpg" alt="img15" class="thumbnail">
+<img src="images/coolimg/skull demon.jpg" alt="img16" class="thumbnail">
+<img src="images/coolimg/skull cult.jpg" alt="img17" class="thumbnail">
+<img src="images/coolimg/skull singers.jpg" alt="img18" class="thumbnail">
+<img src="images/coolimg/skull pile.jpg" alt="img19" class="thumbnail">
+<img src="images/coolimg/skull fairy.jpg" alt="img20" class="thumbnail">
+
 
     
     <div id="myModal" class="modal">
